@@ -1,0 +1,40 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+/*
+These are far better looking than browser defaults for
+missing or miss-typed images. Firefox sometimes doesn't
+even show missing images
+ */
+
+.image {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 40px;
+}
+
+.image::after {
+    display: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 200px;
+    padding: 10px 20px 10px 45px;
+    border: dashed 1px #888;
+    background-color: #f0f0f0;
+    background-image: url(noimage.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+    z-index: 1;
+    /* look for "alt" value in the html & use that */
+    content: "" attr(alt) " Not Found";
+}
