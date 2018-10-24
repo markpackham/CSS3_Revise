@@ -1,4 +1,70 @@
 .container {
     border: 5px solid #ffcc5c;
     display: flex;
+    /*
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: self-end;
+    */
+    /* row is the default (left to right) */
+    /* column is up to down
+    flex-direction: row;
+    */
+    /*flex-start is default, move from left to right
+    flex-end is the reverse
+    space-around is equal space left & right
+    justify-content: space-around;
+    justify-content: flex-end;
+    */
+    /*
+    we can only set the height to 100% since the container "body" has 100% height
+        height: 100%;
+
+    height: 100%;
+    align-items: center;
+
+    justify-content: center;
+     */
+
+    /*
+    no-wrap is the defualt for flex-wrap
+     */
+    flex-wrap: wrap;
 }
+
+.container > div {
+    width: 300px;
+}
+
+/*
+.home {
+    margin-right: auto;
+}
+ */
+
+/*
+flex short hand for flex-gorw, flex-shrink, flex-basis
+all divs get equal space when flex is 1
+ */
+/*
+.container > div {
+    flex: 1;
+}
+*/
+
+/*
+.home, .logout {
+    flex: 1;
+}
+ */
+
+/*
+.logout {
+    align-self: flex-start;
+}
+
+.home{
+    align-self: flex-end;
+}
+*/
