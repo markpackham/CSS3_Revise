@@ -99,7 +99,7 @@ the same parent and the second one must come IMMEDIATELY after the first.
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
-  transition: opacity 0, 4s ease;
+  transition: opacity 0.4s ease 0.4s;
 }
 
 .menu-wrap .menu {
@@ -115,7 +115,7 @@ the same parent and the second one must come IMMEDIATELY after the first.
   justify-content: center;
 }
 
-.menu-wrap .meue > div {
+.menu-wrap .menu > div {
   background: var(--overlay-color);
   border-radius: 50%;
   width: 200vw;
@@ -128,7 +128,7 @@ the same parent and the second one must come IMMEDIATELY after the first.
   transition: all 0.4s ease;
 }
 
-.menu-wrap .meue > div > div {
+.menu-wrap .menu > div > div {
   text-align: center;
   max-width: 90vw;
   max-height: 100vh;
@@ -136,13 +136,13 @@ the same parent and the second one must come IMMEDIATELY after the first.
   transition: opacity 0.4s ease;
 }
 
-.menu-wrap .meue > div > div > ul > li {
+.menu-wrap .menu > div > div > ul > li {
   list-style: none;
   color: #fff;
   font-size: 1.5rem;
   padding: 1rem;
 }
-.menu-wrap .meue > div > div > ul > li > a {
+.menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
