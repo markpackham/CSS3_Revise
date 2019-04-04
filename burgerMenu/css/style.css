@@ -1,13 +1,13 @@
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
-  --overly-color: rgba(24, 39, 51, 0.85);
+  --overlay-color: rgba(24, 39, 51, 0.85);
   --menu-speed: 0.75s;
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 .showcase {
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   color: #fff;
   height: 100vh;
   position: relative;
@@ -61,12 +61,12 @@ body {
 .btn {
   display: inline-block;
   border: none;
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   color: #fff;
   padding: 0.75rem 1.5rem;
   margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
   text-decoration: none;
-  transition: opacity 1s ease-in;
 }
 
 .btn:hover {
