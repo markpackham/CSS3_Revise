@@ -1,0 +1,14 @@
+.loader {
+  height: 50px;
+}
+
+.circle {
+  background-color: purple;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.circle:nth-child(2) {
+  background-color: palevioletred;
+}
