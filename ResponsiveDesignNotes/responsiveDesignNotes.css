@@ -98,3 +98,34 @@ These media features accept a resolution value in either dots per inch (dpi) or 
 @media only screen and (min-resolution: 300dpi) {
   /* CSS for high resolution screens */
 }
+
+/*
+Comma Separated List is like an OR condition for media queries which makes it differnt from AND
+If only one of multiple media features in a media query must be met, media features can be separated in a comma separated list.
+*/
+@media only screen and (min-width: 480px), (orientation: landscape) {
+  /* CSS ruleset */
+}
+
+/*
+Breakpoints are the screen sizes at which your web page does not appear properly. For example, if we want to target tablets that are in landscape orientation, 
+we can create the following breakpoint:
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS ruleset */
+}
+/*
+Various Breakpoints
+https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png
+*/
+
+/*
+When a website responds to the size of the screen it’s viewed on, it’s called a responsive website.
+You can write media queries to help with different screen sizes.
+Media queries require media features. Media features are the conditions that must be met to render the CSS within a media query.
+Media features can detect many aspects of a user’s browser, including the screen’s width, height, resolution, orientation, and more.
+The and operator requires multiple media features to be true at once.
+A comma separated list of media features only requires one media feature to be true for the code within to be applied.
+The best practice for identifying where media queries should be set is by resizing the browser to determine where the content naturally breaks. 
+Natural breakpoints are found by resizing the browser.
+*/
