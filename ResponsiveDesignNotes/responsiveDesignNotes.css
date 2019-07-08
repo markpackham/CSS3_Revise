@@ -82,3 +82,19 @@ or smaller. Media features are the conditions that must be met in order to rende
 CSS rules are nested inside of the media query’s curly braces. The rules will be applied when the media query is met. 
 In the example above, the text in the body element is set to a font-size of 12px when the user’s screen is less than 480px.
 */
+
+/*
+Dots per inch and dots per centimeter
+*/
+/*
+Dots Per Inch (DPI)
+Another media feature we can target is screen resolution. 
+Many times we will want to supply higher quality media (images, video, etc.) only to users with screens that can support high resolution media. 
+Targeting screen resolution also helps users avoid downloading high resolution (large file size) images that their screen may not be able to properly display.
+
+To target by resolution, we can use the min-resolution and max-resolution media features. 
+These media features accept a resolution value in either dots per inch (dpi) or dots per centimeter (dpc).
+*/
+@media only screen and (min-resolution: 300dpi) {
+  /* CSS for high resolution screens */
+}
