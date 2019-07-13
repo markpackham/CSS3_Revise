@@ -1,0 +1,41 @@
+/*Global */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+button, .button {
+    display: inline-block;
+    position: relative;
+    border-width: 0;
+    cursor: pointer;
+    line-height: normal;
+    margin: 0 0 10px;
+    text-align: center;
+    padding: 15px 25px;
+    font-size: 25px;
+    background: #659cef;
+    color: #fff;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+button:after, .button:after {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+button:hover:after, .button:hover:after {
+    box-shadow: inset 0 -7px rgba(0, 0, 0, .25);
+}

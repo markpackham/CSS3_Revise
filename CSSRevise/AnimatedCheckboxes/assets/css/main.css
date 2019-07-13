@@ -1,0 +1,51 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body {
+    padding: 50px;
+}
+
+label {
+    cursor: pointer;
+    color: #666;
+}
+
+/*We only want to target checkboxes and not other inputs */
+/*Create fake nodes inside the dom*/
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + .label-text:before {
+    content: "\f096";
+    font-family: "FontAwesome";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    width: 1em;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+input[type="checkbox"]:checked + .label-text:before {
+    content: "\f14a";
+    color: #06a3e9;
+    animation: ticked 180ms ease-in;
+}
+
+input[type="checkbox"]:disabled {
+    color: #aaa;
+}
+
+input[type="checkbox"]:disabled + .label-text:before {
+    content: "\f0c8";
+    color: #ccc;
+}
+
+@keyframes ticked {
+    0% {transform: scale(0)}
+    90% {transform: scale(1.3)}
+    100% {transform: scale(1)}
+}

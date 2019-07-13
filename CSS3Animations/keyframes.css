@@ -1,0 +1,66 @@
+body {
+    background: #333;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.box {
+    background: #fff;
+    width: 300px;
+    height: 300px;
+    /*We want to be able to move it around*/
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 5s;
+    /*Run the animation twice "infinite" is also an option */
+    animation-iteration-count: 2;
+    /*stay as a circle at the end, don't just turn back into a square when finished*/
+    animation-fill-mode: forwards;
+
+    /* If you wanted to dely it by 2 seconds
+    animation-delay: 2s;
+    */
+    /*
+    animation-direction: reverse;
+        animation-direction: alternate;
+    */
+    /*start slow, end fast, ease-in-out is the default to start and end slow*/
+    animation-timing-function: ease-in;
+}
+
+@keyframes myanimation {
+    /*start white and end white and get back where we started
+    morph into a circle
+    */
+    0% {
+        background: #fff;
+        left: 0px;
+        top: 0px;
+        border-radius: 0 0 0 0;
+    }
+    25% {
+        background: red;
+        left: 300px;
+        top: 0px;
+        border-radius: 50% 0 0 0;
+    }
+    50% {
+        background: yellow;
+        left: 300px;
+        top: 300px;
+        border-radius: 50% 50% 0 0;
+    }
+    75% {
+        background: turquoise;
+        left: 0px;
+        top: 300px;
+        border-radius: 50% 50% 50% 0;
+    }
+    100% {
+        background: #fff;
+        left: 0px;
+        top: 0px;
+        border-radius: 50% 50% 50% 50%;
+    }
+}

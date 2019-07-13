@@ -1,0 +1,32 @@
+/*Global */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 500px;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #e0e0e0;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.progress-bar-fill {
+    /* Without display block you wouldn't see anything */
+    display: block;
+    height: 22px;
+    background-color: #659cef;
+    border-radius: 3px;
+    transition: width 500ms ease-in-out;
+}

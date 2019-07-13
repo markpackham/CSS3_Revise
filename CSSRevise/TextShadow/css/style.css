@@ -1,0 +1,19 @@
+body {
+    background: #444;
+    margin: 0;
+}
+
+.container {
+    padding: 20px 50px;
+}
+
+h1 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 5em;
+   color: #fff;
+}
+
+.shadow{
+    /*X offset, Y offset, Blur radius (how wide and light, 0 is thick), color */
+    text-shadow: 4px 3px 0 #222;
+}

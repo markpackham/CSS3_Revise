@@ -1,0 +1,44 @@
+/*Global */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+    background: #eee;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container{
+    background: #fff;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.nav-justify ul{
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+.nav-justify ul li{
+    display: inline-block;
+}
+
+/*We've created a psudo element to sit at the bottom at 100% to make sure everything above it aligns */
+.nav-justify ul:after{
+    content: " ";
+    display: inline-block;
+    height: 0;
+    width: 100%;
+}
+
+.nav-justify ul li a{
+    background: #ccc;
+}

@@ -1,0 +1,7 @@
+.egg{
+    width: 120px;
+    height: 170px;
+    background: darkmagenta;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+

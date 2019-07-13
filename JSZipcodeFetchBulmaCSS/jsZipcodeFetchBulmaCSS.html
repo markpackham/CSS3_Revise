@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsZipcodeFetchBulmaCSS</title>
+    <meta name="author" content="Mark Packham">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- using Font Awesome and Bulma CSS via CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header></header>
+<section class="hero hero-body is-dark container">
+    <h1 class="title">US Location Info</h1>
+    <h2 class="subtitle">Enter a zipcode to get the location info</h2>
+    <p>An example of a postcode is 02102</p>
+    <form id="zipForm">
+        <div class="field">
+            <div class="control has-icons-left has-icons-right">
+                <input class="input zip is-large" type="text" placeholder="Enter Zipcode">
+                <span class="icon is-small is-left">
+            <i class="fa fa-map-pin"></i>
+          </span>
+                <span class="icon is-small is-right icon-check">
+            <i class="fa fa-check"></i>
+          </span>
+                <span class="icon is-small is-right icon-remove">
+            <i class="fa fa-remove"></i>
+          </span>
+            </div>
+        </div>
+    </form>
+</section>
+
+<br>
+<div class="container">
+    <div id="output"></div>
+</div>
+<footer></footer>
+<script src="js/zipCode.js"></script>
+</body>
+</html>

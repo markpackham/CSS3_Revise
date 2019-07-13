@@ -1,0 +1,56 @@
+/*Global */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: #e93a30;
+    font-weight: 600;
+}
+
+.roll-link {
+    /*We want to apply attributes to it that inline elemnents lack*/
+    display: inline-block;
+    overflow: hidden;
+    /*Text would jump to the top of the screen without this vertical align */
+    vertical-align: top;
+}
+
+.roll-link span {
+    display: block;
+    padding: 0 2px;
+    transition: all 400ms ease;
+    /*X & Y locations */
+    transform-origin: 50% 0;
+    /*Put children of element in a 3d space */
+    transform-style: preserve-3d;
+}
+
+.roll-link:hover span {
+    background: #e93830;
+    transform: rotateX(90deg);
+}
+
+.roll-link span:after {
+    /* content: "Mark"; */
+    /* Mark would appear after the text but we want what's in the "data-title" from the html */
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 2px;
+    background: #e93830;
+    color: #fff;
+
+    transform-origin: 50% 0;
+    /*We give an X, Y and Z axis */
+    transform: translate3d(0,100%,0) rotateX(-90deg);
+}

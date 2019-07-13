@@ -1,0 +1,10 @@
+.columns,
+.column {
+    background: #f4f4f4;
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+
+h1{
+    color: red;
+}

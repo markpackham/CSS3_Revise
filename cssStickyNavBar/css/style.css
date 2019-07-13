@@ -1,0 +1,87 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+}
+
+.top-nav {
+    padding: 16px;
+    margin: auto;
+    background-color: white;
+    width: 80%;
+    text-align: center;
+    line-height: 35px;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav li {
+    display: inline-block;
+}
+
+.top-nav a:link, a:visited {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+.top-nav a:hover, a:active {
+    color: lightgrey;
+}
+
+.btn {
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    /* The inherit keyword specifies that a property should inherit its value from its parent element.
+    In this case we use the setting set by the body
+    */
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.btn-section {
+    background-color: transparent;
+}
+
+.btn-section:hover {
+    background-color: #eee;
+}
+
+.btn-user {
+    background-color: lightgrey;
+}
+
+btn-user:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.scrolling {
+    position: fixed;
+    padding-left: 10%;
+    padding-right: 10%;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid #bbb;
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,14 @@
+body {
+    background: #ccc;
+    margin: 0;
+}
+
+.container {
+    padding: 20px 50px;
+    background: #000;
+}
+
+.container img {
+    -webkit-filter: drop-shadow(0 0 50px white);
+}
+

@@ -1,0 +1,25 @@
+/*Global */
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+    display: table;
+    height: 100%;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.wrapper {
+    padding: 20px;
+    height: auto;
+}
+
+footer {
+    background: lightpink;
+    /*using a tabel as a hack */
+    display: table-row;
+    height: 1px;
+}

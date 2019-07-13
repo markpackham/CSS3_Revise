@@ -1,0 +1,65 @@
+/*Global */
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    margin-left: 50px;
+}
+
+.nav-side {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 150px;
+    background: #659cef;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #fff;
+    /*Hide the menu */
+    margin-left: -150px;
+    /*CSS animation */
+    transition: margin 400ms ease-in-out;
+}
+
+.nav-toggle {
+    /*Position itself relative to its ancestor element */
+    position: absolute;
+    right: -40px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: #659cef;
+    line-height: 40px;
+    text-align: center;
+    border-bottom-right-radius: 3px;
+    box-shadow: 1px 0 3px rgba(0,0,0,.1);
+}
+
+.nav-side.nav-open{
+    margin-left: 0;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.1);
+}
+
+.nav-toggle:before{
+    /*unicode for an arrow */
+    content: " \2192";
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-side.nav-open .nav-toggle:before{
+    /*unicode inwards arrow */
+    content: "\2190";
+}
