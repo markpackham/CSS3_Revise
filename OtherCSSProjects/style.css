@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfdfdf;
+}
+
+body {
+  /* the user is 800px away from the object so we have depth */
+  perspective: 800px;
+}
+
+.btn {
+  position: relative;
+  height: 150px;
+  width: 450px;
+  transform-style: preserve-3d;
+  transition: transform 300ms ease-in-out;
+  /* remove text blur when button moves */
+  transform: translateZ(-75px);
+}
+
+.btn:hover {
+  transform: rotateX(-90deg) translateY(75px);
+}
+
+.side {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.default-side {
+  background: #fff;
+  border: 10px solid #069;
+  color: #069;
+  /* bring it closer to us based on half its height */
+  transform: translateZ(75px);
+}
+
+.hover-side {
+  color: #fff;
+  background: #069;
+  /* hide this by making it horizontal */
+  transform: rotateX(90deg) translateZ(75px);
+}
