@@ -2,13 +2,13 @@ body {
   margin: 0;
   --nav-load-time: 300ms;
   --nav-link-load-time: 500ms;
-  --article-load-delay: calc(var(--nav-load-time)+var(--nav-link-load-time));
+  --article-load-delay: calc(var(--nav-load-time) + var(--nav-link-load-time));
 }
 
 nav {
   background: rgb(0, 61, 92);
   color: white;
-  animation: nav-load (--nav-load-time) ease-in;
+  animation: nav-load var(--nav-load-time) ease-in;
 }
 
 nav ul {
@@ -62,7 +62,7 @@ h1 {
 }
 
 p {
-  animation: article-load 300ms ease-in calc(var(--article-load-delay)+200ms);
+  animation: article-load 300ms ease-in calc(var(--article-load-delay) + 200ms);
   animation-fill-mode: forwards;
   transform: translateY(-20px);
   opacity: 0;
@@ -81,7 +81,6 @@ p {
 @keyframes nav-link-load {
   0% {
     transform: scale(0);
-    transform: transformX(-1000%);
   }
 
   /* create a bounce effect going beyond 100% in scale */
