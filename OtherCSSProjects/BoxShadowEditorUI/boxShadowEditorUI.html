@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <title>Box Shadow Editor UI</title>
+  </head>
+  <body>
+    <p>
+      Box Shadow Editor UI learned from
+      https://www.youtube.com/watch?v=w2D-lQtYDks
+    </p>
+    <div class="sidebar">
+      <label for="x-position">X</label>
+      <input type="number" name="x-position" id="x-position" value="3" />
+
+      <label for="y-position">Y</label>
+      <input type="number" name="y-position" id="y-position" value="3" />
+
+      <label for="blur">Blur</label>
+      <input type="number" name="blur" id="blur" value="5" />
+
+      <label for="spread">Spread</label>
+      <input type="number" name="spread" id="spread" value="6" />
+
+      <label for="shadow-color">Shadow</label>
+      <input
+        type="color"
+        name="shadow-color"
+        id="shadow-color"
+        value="#000000"
+      />
+
+      <div class="divider"></div>
+
+      <label for="box-color">Box</label>
+      <input type="color" name="box-color" id="box-color" value="#FFD700" />
+
+      <label for="background-color">Background</label>
+      <input
+        type="color"
+        name="background-color"
+        id="background-color"
+        value="#FFFFFF"
+      />
+    </div>
+
+    <div class="box-container">
+      <div id="box"></div>
+    </div>
+
+    <!-- Side Links Only -->
+    <div class="side-links">
+      <a
+        href="https://youtu.be/-zpPXoxxqvg"
+        target="_blank"
+        class="side-link side-link-youtube"
+      >
+        <i class="fab fa-youtube-square side-link-icon"></i>
+        <span class="side-link-text">View Tutorial</span>
+      </a>
+      <a
+        href="https://github.com/WebDevSimplified"
+        target="_blank"
+        class="side-link side-link-github side-link-icon"
+      >
+        <i class="fab fa-github-square"></i>
+        <span class="side-link-text">View GitHub</span>
+      </a>
+      <a
+        href="https://twitter.com/DevSimplified"
+        target="_blank"
+        class="side-link side-link-twitter"
+      >
+        <i class="fab fa-twitter-square side-link-icon"></i>
+        <span class="side-link-text">View Twitter</span>
+      </a>
+    </div>
+  </body>
+</html>
