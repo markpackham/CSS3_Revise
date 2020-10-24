@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations</title>
+    <style>
+      .parent {
+        background-color: hsla(200, 100%, 20%);
+        height: 400px;
+        width: 400px;
+      }
+
+      .child {
+        background-color: red;
+        height: 50%;
+        width: 50%;
+        /* transition is great for simple smooth animations */
+        /* transition: 1s ease-in-out; */
+        transition: 1s cubic-bezier(0.7, 0.04, 0.66, 1.71) 3s;
+      }
+
+      .parent:hover .child {
+        background-color: green;
+        transform: translateX(100%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      CSS Animations revise from https://www.youtube.com/watch?v=YszONjKpgg4
+    </h1>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>
