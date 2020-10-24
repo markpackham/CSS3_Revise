@@ -17,12 +17,34 @@
         width: 50%;
         /* transition is great for simple smooth animations */
         /* transition: 1s ease-in-out; */
-        transition: 1s cubic-bezier(0.7, 0.04, 0.66, 1.71) 3s;
+        /* transition: 1s cubic-bezier(0.7, 0.04, 0.66, 1.71) 3s; */
+        animation: left-to-right 1s ease-in forwards infinite alternate;
       }
 
       .parent:hover .child {
         background-color: green;
-        transform: translateX(100%);
+        /* transform: translateX(100%); */
+        /* animation: left-to-right 1s ease-in forwards 3 alternate; */
+        /* freeze on hover ower, running is default */
+        animation-play-state: paused;
+      }
+
+      @keyframes left-to-right {
+        0% {
+          transform: translateX(0%);
+        }
+        33% {
+          transform: translateY(100%);
+        }
+        50% {
+          background-color: yellow;
+        }
+        66% {
+          transform: translateX(100%) translateY(100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
       }
     </style>
   </head>
